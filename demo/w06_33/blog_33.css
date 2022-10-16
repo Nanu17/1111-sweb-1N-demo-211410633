@@ -43,12 +43,30 @@ body {
 
 .blogs-center {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
     width: var(--fluid-width);
     max-width: var(--max-width);
     margin: 0 auto;
     /*max-width: 500px; */
+}
+
+@media screen and (min-width: 450px) {
+    .blogs-center{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blogs-center{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blogs-center{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 .blogs-center2 {

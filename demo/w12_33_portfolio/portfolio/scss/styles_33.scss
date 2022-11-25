@@ -39,6 +39,26 @@ Navbar
 }
 
 
+@media screen and (min-width: 768px) {
+    .nav {
+        .nav-links {
+            display: flex;
+            //justify-content: space-around;
+            gap: 1.5rem;
+            position: absolute;
+            right: 3rem;
+
+            li a {
+                color: var(--clr-grey-5);
+            }
+        }
+        
+        .nav-btn {
+            display: none;
+        }
+    }
+}
+
 /*
 =============== 
 Sidebar
@@ -88,8 +108,23 @@ Sidebar
             }
         }
     }
-}
 
+    .social-icons {
+        display: grid;
+        margin-top: 3rem;
+        width: 20rem;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+    }
+    .social-icon {
+        font-size: 1.5rem;
+        color: var(--clr-grey-5);
+        transition: var(--transition);
+    }
+    .social-icon:hover {
+        color: var(--clr-primary-5);
+    }
+}
 .show-sidebar {
     transform: translateX(0);
 }

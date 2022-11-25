@@ -9,11 +9,11 @@ console.log('sidebar',sidebar);
 
 navBtn.addEventListener('click',function(){
   sidebar.classList.add('show-sidebar');
-})
+});
 
 closeBtn.addEventListener('click',function(){
   sidebar.classList.remove('show-sidebar');
-})
+});
 // add fixed class to navbar
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > 80) {

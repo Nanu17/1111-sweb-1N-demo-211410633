@@ -1,1 +1,4 @@
 sass --watch demo/w12_33_portfolio/portfolio/scss:demo/w12_33_portfolio/portfolio/css
+
+
+sass --watch dev/portfolio/scss:dev/portfolio/css

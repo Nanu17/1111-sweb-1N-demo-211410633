@@ -3,17 +3,17 @@ const date = document.querySelector('#date');
 const navBtn = document.querySelector('#nav-btn');
 const closeBtn = document.querySelector('#close-btn');
 const sidebar = document.querySelector('#sidebar');
-console.log('navBtn',navBtn);
-console.log('closeBtn',closeBtn);
-console.log('sidebar',sidebar);
+console.log('navbar', navbar);
+console.log('closeBtn', closeBtn);
+console.log('sidebar', sidebar);
 
-navBtn.addEventListener('click',function(){
+navBtn.addEventListener('click', function () {
   sidebar.classList.add('show-sidebar');
-});
-
-closeBtn.addEventListener('click',function(){
+} );
+closeBtn.addEventListener('click', function () {
   sidebar.classList.remove('show-sidebar');
 });
+
 // add fixed class to navbar
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > 80) {
@@ -22,4 +22,3 @@ window.addEventListener('scroll', function () {
     navbar.classList.remove('navbar-fixed');
   }
 });
-// set year
